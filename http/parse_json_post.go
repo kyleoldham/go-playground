@@ -15,6 +15,7 @@ func parsePost(rw http.ResponseWriter, request *http.Request) {
 
 	var j jsonStruct
 	err := decoder.Decode(&j)
+	fmt.Println(err)
 
 	if err != nil {
 		panic(err)
